@@ -2,6 +2,8 @@
 
 pragma solidity 0.8.20;
 
+// simple contract to store name and favorite number and to map name to favorite number
+
 contract SimpleStorage {
 
     uint256 myFavoriteNumber;
@@ -15,7 +17,7 @@ contract SimpleStorage {
 
     mapping (string => uint256) public nameToFavoriteNumber;
 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual  {
         myFavoriteNumber = _favoriteNumber;
     }
 
